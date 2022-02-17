@@ -612,7 +612,13 @@
   transition: all 0.1s linear;
 }
 
-.checkboxes-form .checkbox-wrap {
+.checkboxes-form .custom-checkbox,
+.personality .custom-checkbox {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.checkboxes-form .checkbox-wrap,
+.personality .checkbox-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -621,17 +627,19 @@
   flex: 0 0 32px;
   height: 32px;
   border-radius: 0px;
-  border: 2px solid #000105;
+  border: 3px solid #000105;
 }
-.checkboxes-form .custom-checkbox input:checked + .checkbox-wrap::after {
+.checkboxes-form .custom-checkbox input:checked + .checkbox-wrap::after,
+.personality .custom-checkbox input:checked + .checkbox-wrap::after {
   transform: scale(1);
   opacity: 1;
 }
-.checkboxes-form .custom-checkbox .checkbox-wrap::after {
+.checkboxes-form .custom-checkbox .checkbox-wrap::after,
+.personality .custom-checkbox .checkbox-wrap::after {
   content: "";
   display: block;
-  width: 27px;
-  height: 27px;
+  width: 26px;
+  height: 26px;
   /* background: url(../img/svg-check-ic.svg) no-repeat 0 0;*/
   background: #404D9C;
   background-size: 100%;
@@ -640,7 +648,76 @@
   opacity: 0;
   transition: all 0.1s linear;
 }
+.checkboxes-form .checkbox-text,
+.personality .checkbox-text {
+  font-size: 29px;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top: 5px;
+}
 
+.personality {
+  margin-top: -80px;
+  margin-left: 98px;
+}
+.personality .checkbox-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.fname {
+  margin-right: 32px !important;
+}
+
+@media only screen and (max-width: 1256px) {
+  .personality {
+    margin-top: -40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .personality .checkbox-text {
+    font-size: 9px;
+  }
+
+  .checkboxes-form .custom-checkbox,
+.personality .custom-checkbox {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .checkboxes-form .checkbox-wrap,
+.personality .checkbox-wrap {
+    width: 15px;
+    max-width: 15px;
+    flex: 0 0 15px;
+    height: 15px;
+    border-radius: 0px;
+  }
+  .checkboxes-form .custom-checkbox .checkbox-wrap::after,
+.personality .custom-checkbox .checkbox-wrap::after {
+    width: 12px;
+    height: 12px;
+  }
+  .checkboxes-form .checkbox-text,
+.personality .checkbox-text {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+
+  .form-group--part .input_wrp label {
+    font-size: 15px;
+  }
+
+  .personality {
+    margin-top: -20px;
+  }
+
+  .fname {
+    margin-right: 25px !important;
+  }
+}
 /*Радио кнопка*/
 .input-hidden {
   display: none;
@@ -829,15 +906,8 @@
   padding-top: 10px;
   box-sizing: border-box;
   margin-left: -38px;
-  /*  left: attr(value);*/
   color: #fff;
   font-size: 50px;
-}
-.rs-label::after {
-  content: "млн";
-  font-size: 50px;
-  letter-spacing: 1.3;
-  margin-right: 10px;
 }
 .rs-label::before {
   content: "";
@@ -1092,6 +1162,14 @@
     text-align: center;
   }
 }
+.step-content-six {
+  padding: 20px;
+}
+
+.step-number--active-six {
+  background: #000105;
+}
+
 .step-content p {
   font-size: 26px;
   line-height: 1.3;
@@ -1128,5 +1206,91 @@
   height: 55px;
   font-size: 20px;
   padding-left: 20px;
+}
+
+.btn-wrp {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.btn-next {
+  background: #fff;
+  border: 3px solid #000105;
+  padding: 15px 28px;
+  color: #000105;
+  cursor: pointer;
+  font-size: 28px;
+  transition: all 0.3s;
+}
+.btn-next:hover {
+  background: #000105;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .step-content-six {
+    top: 280px;
+  }
+
+  .step-number--active-six {
+    background: #000105;
+    position: absolute;
+    width: 320px;
+    left: 15px;
+    right: 15px;
+    top: 195px;
+  }
+}
+@media only screen and (max-width: 756px) {
+  .form-group {
+    flex-wrap: wrap;
+  }
+
+  .step-content-six p {
+    text-align: center;
+  }
+
+  .fgp-left {
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+
+  .fgp-right {
+    flex-basis: 100%;
+  }
+
+  .input_wrp--tel {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .step-content-six p {
+    font-size: 13px;
+  }
+
+  .input_wrp input {
+    height: 26px;
+  }
+
+  .personality .checkbox-text {
+    font-size: 9px;
+  }
+
+  .input_wrp--tel {
+    margin-left: 60px;
+  }
+
+  .personality {
+    margin-left: 40px;
+  }
+
+  .btn-wrp {
+    margin-top: 20px;
+  }
+
+  .btn-next {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
