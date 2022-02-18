@@ -148,7 +148,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="step">
 
                     <div class="step-number">
@@ -176,29 +175,7 @@
                             <div class="box-minmax">
                                 <span>Более 5 млрд.</span>
                             </div>
-
-
-
-
                         </div>
-
-                        <!--    <script>
-        const progress = document.querySelector('.progress');
-        progress.addEventListener('input', function() {
-            const value = this.value;
-            this.style.background = `linear-gradient(to right, #000 10%, #000 ${value}%, #fff ${value}%, white 100%)`
-        })
-        var rangeSlider = document.getElementById("rs-range-line");
-        var rangeBullet = document.getElementById("rs-bullet");
-        rangeSlider.addEventListener("input", showSliderValue, false);
-
-        function showSliderValue() {
-            rangeBullet.innerHTML = rangeSlider.value;
-            var bulletPosition = (rangeSlider.value / rangeSlider.max);
-            rangeBullet.style.left = (bulletPosition * 497) + "px";
-        }
-    </script>-->
-
                     </div>
                 </div>
                 <div class="step">
@@ -300,7 +277,41 @@
 
 
                             </div>
-                            <div class="tooltip-hidden tooltip-hidden--large">
+                            <div class="tooltip-hidden tooltip-hidden--large" style="display: none">
+                                <div class="tooltip-info">
+                                    <div class="tooltip-question">
+                                        Нужен ли подбор земельного участка?
+                                    </div>
+                                    <div class="tooltip-inputs">
+                                        <label class="ui-radiobox ui-radiobox_custom">
+                                            <input class="input-hidden" type="radio" name="a" val="" checked> <span class="ui-radiobox__label">Да</span>
+                                        </label>
+
+                                        <label class="ui-radiobox ui-radiobox_custom">
+                                            <input class="input-hidden" type="radio" name="a" val=""><span class="ui-radiobox__label ui-radiobox__label--red">Нет</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="tooltip-info">
+                                    <div class="tooltip-question">
+                                        Планируется ли строительство здания
+                                        стоимостью более <b>50 млн. руб.</b>
+                                        (за&nbsp;исключением зданий для целей торговли)?
+                                    </div>
+                                    <div class="tooltip-inputs">
+                                        <label class="ui-radiobox ui-radiobox_custom">
+                                            <input class="input-hidden" type="radio" name="a" val="" checked> <span class="ui-radiobox__label">Да</span>
+                                        </label>
+
+                                        <label class="ui-radiobox ui-radiobox_custom">
+                                            <input class="input-hidden" type="radio" name="a" val=""><span class="ui-radiobox__label ui-radiobox__label--red">Нет</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tooltip-hidden tooltip-hidden--large large-down tooltip-hidden--arrowdown-right">
                                 <div class="tooltip-info">
                                     <div class="tooltip-question">
                                         Нужен ли подбор земельного участка?

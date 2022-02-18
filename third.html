@@ -20,6 +20,13 @@
 <body>
     <main>
         <div class="wrap">
+            <div class="burger-mobile">
+                <input id="click" name="exit" type="checkbox" />
+                <label for="click"><span class="burger"></span></label>
+            </div>
+            <div class="wrap_title">
+
+                Меры поддержки вашего проекта</div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">
@@ -211,31 +218,32 @@
                         <div class="step-title">
                             Является ли компания субъектом МСП?
                         </div>
-                        <div class="tooltip-inputs tooltip-inputs--center">
-                            <label class="ui-radiobox ui-radiobox_custom">
-                                <input class="input-hidden" type="radio" name="a" val="" checked> <span class="ui-radiobox__label">Да</span>
-                            </label>
+                        <div class="third-wrp">
+                            <div class="tooltip-inputs tooltip-inputs--center">
+                                <label class="ui-radiobox ui-radiobox_custom">
+                                    <input class="input-hidden" type="radio" name="a" val="" checked> <span class="ui-radiobox__label">Да</span>
+                                </label>
 
-                            <label class="ui-radiobox ui-radiobox_custom">
-                                <input class="input-hidden" type="radio" name="a" val=""><span class="ui-radiobox__label ui-radiobox__label--red">Нет</span>
-                            </label>
-                        </div>
-
-                        <a href="#" class="msp">
-                            <div class="msp__info">
-                                <div class="msp__icon">
-                                    <svg class="ic_msp">
-                                        <use xlink:href="img/sprite.svg#vopr"></use>
-                                    </svg>
-
-                                </div>
-                                <div class="msp__text">
-                                    Проверить наличие компании в реестре МСП
-                                </div>
+                                <label class="ui-radiobox ui-radiobox_custom">
+                                    <input class="input-hidden" type="radio" name="a" val=""><span class="ui-radiobox__label ui-radiobox__label--red">Нет</span>
+                                </label>
                             </div>
 
-                        </a>
+                            <a href="#" class="msp">
+                                <div class="msp__info">
+                                    <div class="msp__icon">
+                                        <svg class="ic_msp">
+                                            <use xlink:href="img/sprite.svg#vopr"></use>
+                                        </svg>
 
+                                    </div>
+                                    <div class="msp__text">
+                                        Проверить наличие<br>компании в реестре МСП
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
                     </div>
 
                 </div>
@@ -263,7 +271,7 @@
                 </div>
 
             </div>
-              <div class="next-prev">
+            <div class="next-prev">
                 <a class="arrow prev" href="fourth.html">
                     <svg class="ic_next">
                         <use xlink:href="img/sprite.svg#prev"></use>
