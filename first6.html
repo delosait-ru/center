@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#111111">
     <title>New site</title>
@@ -27,7 +27,7 @@
 
                  Меры поддержки вашего проекта</div>
              <div class="steps">
-                 <div class="step">
+                 <div class="step active">
                      <div class="step_number">
                          <svg class="ic_header">
                              <use xlink:href="img/sprite.svg#first"></use>
@@ -51,7 +51,7 @@
                                          <label for="plant" class="radio-tile-label">Промышленное производство (включая пищевое)</label>
                                      </div>
                                  </div>
-                                 <div class="tooltip-hidden">
+                                 <div class="tooltip-hidden" style="display: none;">
                                      <div class="tooltip-info">
                                          <div class="tooltip-question">
                                              Является ли производство
@@ -219,7 +219,7 @@
                                          <label for="vopr" class="radio-tile-label">Другое</label>
                                      </div>
                                  </div>
-                                 <div class="tooltip-hidden tooltip-hidden6" style="display: none;">
+                                 <div class="tooltip-hidden tooltip-hidden6">
                                      <div class="tooltip-info">
                                          <div class="tooltip-question">
                                              Является ли производство
@@ -670,59 +670,9 @@
                          </div>
                      </div>
                  </div>
-                 <div class="step step-six active">
-                     <div class="step_number step_number--six">
-                         <svg class="ic_header ic_six">
-                             <use xlink:href="img/sprite.svg#envelop2"></use>
-                         </svg>
-                     </div>
-                     <div class="step_content step_content-six">
-                         <p>Для того, чтобы Вы могли в любое время вернуться к расчету, укажите e-mail, вам будет
-                             выслана ссылка на расчет и полная версия презентации по мерам поддержки.
-                             Если у Вас остались вопросы, оставьте свой номер телефона и с Вами свяжется наш
-                             специалист для консультации.</p>
-                         <form action="#">
-                             <div class="form-group">
-                                 <div class="form-group--part fgp-left">
-                                     <div class="input_wrp">
-                                         <label class="fname" for="name">Имя:</label>
-                                         <input id="name" type="text" required>
-                                     </div>
-                                     <div class="input_wrp">
-                                         <label for="email">Email:</label>
-                                         <input id="email" type="email" required>
-                                     </div>
 
-                                 </div>
-                                 <div class="form-group--part fgp-right">
-                                     <div class="input_wrp input_wrp--tel">
-                                         <label for="phone">Телефон:</label>
-                                         <div class="ws-wrp">
-                                             <input id="phone" type="tel" required>
-                                             <div class="checkboxes-form">
-                                                 <label class="custom-checkbox"> <input class="checkbox-hidden" type="checkbox" name="Whatsapp"> <span class="checkbox-wrap"> </span> <span class="checkbox-text"> Whatsapp</span> </label>
-                                                 <label class="custom-checkbox"> <input class="checkbox-hidden" type="checkbox" name="Whatsapp"> <span class="checkbox-wrap"> </span> <span class="checkbox-text"> Telegram</span> </label>
-
-                                             </div>
-                                         </div>
-                                     </div>
-
-                                 </div>
-
-                             </div>
-                             <div class="personality">
-                                 <label class="custom-checkbox"> <input class="checkbox-hidden" type="checkbox" name="Принято"> <span class="checkbox-wrap"> </span> <span class="checkbox-text"> Согласие на обработку персональных данных</span> </label>
-
-                             </div>
-                             <div class="btn-wrp">
-                                 <button class="btn-next">Продолжить</button>
-                             </div>
-                         </form>
-
-                     </div>
-                 </div>
              </div>
-             <div class="next-prev next-prev--last">
+             <div class="next-prev next-prev--first">
                  <a class="arrow prev" href="fourth.html">
                      <svg class="ic_next">
                          <use xlink:href="img/sprite.svg#prev"></use>
