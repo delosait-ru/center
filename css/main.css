@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: flex-start;
   border-right: 1px solid #fff;
-  padding: 15px;
+  padding: 20px 15px 15px 15px;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -37,8 +37,8 @@
 
 .ic_header {
   fill: #fff;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
 }
 
 .active {
@@ -692,7 +692,7 @@
 }
 @media only screen and (max-width: 550px) {
   .radio-tile-group {
-    flex-basis: 100%;
+    flex-basis: 45%;
   }
   .radio-tile-group .input-container .radio-tile-label {
     font-size: 10px;
@@ -1324,6 +1324,15 @@
     left: 550px;
   }
 }
+@media only screen and (max-width: 710px) {
+  .tooltip-hidden--large2 {
+    left: -200px;
+    width: 490px;
+  }
+  .tooltip-hidden--large2::after {
+    left: 350px;
+  }
+}
 @media only screen and (max-width: 550px) {
   .tooltip-question {
     margin-bottom: 20px;
@@ -1344,39 +1353,42 @@
     padding: 20px 20px;
   }
 
+  .tooltip-hidden2 {
+    left: -100px;
+  }
   .tooltip-hidden2::after {
     left: 180px;
   }
 
   .tooltip-hidden3::after {
-    left: 180px;
+    left: 80px;
   }
 
   .tooltip-hidden4 {
     width: auto;
-    left: 0;
+    left: -100px;
     top: -180px;
   }
   .tooltip-hidden4::after {
-    left: 220px;
+    left: 180px;
   }
 
   .tooltip-hidden5 {
     width: auto;
-    left: 0;
+    left: 50px;
     top: -180px;
   }
   .tooltip-hidden5::after {
-    left: 220px;
+    left: 80px;
   }
 
   .tooltip-hidden6 {
     width: auto;
-    left: 0;
+    left: -100px;
     top: -180px;
   }
   .tooltip-hidden6::after {
-    left: 10px;
+    left: 80px;
     rotateY: 180deg;
   }
 
@@ -1769,6 +1781,11 @@
     padding: 20px 0px 10px 0px;
     font-size: 15px !important;
   }
+
+  .radio-tile-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .step_number--six {
   border-left: 1px solid #fff;
@@ -1847,7 +1864,7 @@
 
 @media only screen and (max-width: 1200px) {
   .ic_six {
-    width: 65px;
+    width: 50px;
     height: 53px;
   }
 
