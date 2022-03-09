@@ -4,7 +4,7 @@
 }
 
 .step_number {
-  height: 600px;
+  min-height: 600px;
   width: 75px;
   background: #000105;
   color: #fff;
@@ -71,6 +71,7 @@
 
   .step_number {
     width: 100%;
+    min-height: auto;
     height: 64px;
     align-items: center;
   }
@@ -124,6 +125,10 @@
   .step-title {
     font-size: 17px;
     margin-bottom: 20px;
+  }
+  .step-title span {
+    font-size: 12px;
+    line-height: 1.3;
   }
 }
 .burger-mobile {
@@ -1405,6 +1410,22 @@
     right: 90px;
   }
 }
+.tooltip-eleven {
+  display: flex;
+  align-items: center;
+}
+.tooltip-eleven .tooltip-question {
+  flex-basis: 100%;
+  margin-right: 0;
+}
+.tooltip-eleven .tooltip-question a {
+  color: #000105;
+  text-decoration: underline;
+}
+.tooltip-eleven .tooltip-info {
+  width: 100%;
+}
+
 .range-slider {
   position: relative;
   width: 100%;
@@ -1983,6 +2004,332 @@
   .wrap {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+.s-title {
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.s-name {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.s-info {
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+}
+
+.line_wrp {
+  display: flex;
+  align-items: center;
+  flex-basis: 83%;
+}
+
+.s-info__delete {
+  position: relative;
+  padding: 20px 13px;
+  border-left: 2px solid #000105;
+  cursor: pointer;
+  flex-basis: 17%;
+  margin-left: -10px;
+}
+
+.delete-txt {
+  position: absolute;
+  left: 10px;
+  top: -14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.s-info__line {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+}
+
+.ic_seven {
+  height: 45px;
+  width: 45px;
+}
+
+.bottom-txt {
+  font-size: 26px;
+  margin: 10px 0 5px 0;
+}
+
+.s-info__date {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.s-info__icons {
+  display: flex;
+  padding: 0 29px;
+}
+.s-info__icons span:not(:last-child) {
+  margin-right: 9px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .bottom-txt {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .active .step_number--seven {
+    background: #000105;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    border-right: 0;
+    border-left: none;
+  }
+
+  .step_content-seven {
+    padding: 30px 20px 15px 50px;
+    top: 80px !important;
+  }
+}
+@media only screen and (max-width: 1098px) {
+  .line_wrp {
+    flex-wrap: wrap;
+  }
+
+  .s-info__line {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .s-info__date {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+
+  .s-info {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .s-info::after {
+    content: "";
+    width: 2px;
+    height: 100vh;
+    background: #000105;
+    right: 15%;
+    position: absolute;
+  }
+
+  .s-info__icons {
+    padding: 0 0;
+  }
+
+  .line_wrp {
+    flex-basis: 90%;
+  }
+
+  .s-info__delete {
+    padding: 20px 13px;
+    flex-basis: 10%;
+    border-left: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .bottom-txt {
+    padding-right: 300px;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .step_content-seven {
+    padding: 12px;
+  }
+
+  .s-info__date {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 838px) {
+  .s-info__icons span:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .icon img {
+    height: 40px;
+  }
+
+  .bottom-txt {
+    padding-right: 100px;
+    line-height: 1.5;
+  }
+
+  .s-title {
+    font-size: 24px;
+  }
+
+  .s-name {
+    font-size: 24px;
+  }
+
+  .s-info__date {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .icon img {
+    height: 23px;
+  }
+
+  .ic_seven {
+    height: 23px;
+    width: 23px;
+    padding-left: 4px;
+  }
+
+  .s-info__date {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .s-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .s-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .delete-txt {
+    left: 5px;
+    top: -10px;
+    font-size: 8px;
+  }
+
+  .s-info__delete {
+    margin-left: 0;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .s-info__delete {
+    padding: 0px 0px;
+  }
+
+  .s-info__line {
+    margin-bottom: 14px;
+  }
+
+  .ic_six {
+    width: 32px;
+    height: 39px;
+  }
+
+  .s-info::after {
+    right: 9%;
+  }
+
+  .bottom-txt {
+    font-size: 12px;
+    padding-right: 60px;
+    margin-top: 50px;
+  }
+}
+.form-group--eight {
+  flex-direction: column;
+  display: inline-flex;
+  position: relative;
+}
+.form-group--eight .input_wrp {
+  align-items: center;
+}
+.form-group--eight .input-email {
+  width: 696px;
+}
+.form-group--eight .input-pass {
+  width: 319px;
+}
+.form-group--eight .eightname {
+  margin-right: 47px;
+}
+.form-group--eight .tooltip-hidden {
+  left: 100px;
+  bottom: -180px;
+}
+.form-group--eight .tooltip-question {
+  flex-basis: 100%;
+}
+.form-group--eight .tooltip-question span {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+  .form-group--eight .input-email {
+    width: 100%;
+  }
+  .form-group--eight .input_wrp {
+    flex-wrap: wrap;
+  }
+  .form-group--eight .input_wrp label {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .form-group--eight .input_wrp label {
+    font-size: 12px;
+  }
+  .form-group--eight .input_wrp input {
+    border: 1px solid #000105;
+  }
+  .form-group--eight .input-pass {
+    width: 155px;
+  }
+  .form-group--eight .tooltip-hidden {
+    border: 1px solid #000105;
+    left: 0;
+    height: 70px;
+    padding: 10px 15px;
+    bottom: -80px;
+    display: flex;
+    align-items: center;
+  }
+  .form-group--eight .tooltip-hidden::after {
+    width: 20px;
+    height: 20px;
+    background: url("../img/tooltip3.svg");
+    bottom: 68px;
+  }
+  .form-group--eight .tooltip-question {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+}
+.err_msr {
+  color: #BA205A;
+  margin-top: 20px;
+}
+.err_msr a {
+  color: #BA205A;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 576px) {
+  .err_msr {
+    font-size: 12px;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
