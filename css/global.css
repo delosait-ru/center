@@ -216,7 +216,6 @@ a {
 }
 
 .page {
-  padding-top: 100px;
   min-width: 320px;
   max-width: 1600px;
   box-sizing: border-box;
