@@ -2848,7 +2848,6 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: 450px;
-  height: 100%;
 }
 .step_content--wrp .ver2-0 {
   text-align: center;
@@ -3034,6 +3033,9 @@
     line-height: 26px;
   }
 
+  .step_content--wrp {
+    height: 100%;
+  }
   .step_content--wrp .ver2-0 {
     font-size: 22px;
   }
